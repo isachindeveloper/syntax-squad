@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentorship Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">SLIET Mentorship</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Mentors</a></li>
+      <li><a href="#">Notifications <span id="notification-count">0</span></a></li>
+      <li><a href="#">Communication</a></li>
+    </ul>
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <main>
+    <section class="booking-section">
+      <h2>Available Mentorship Slots</h2>
+      <div class="mentor-list">
+        <!-- Mentor 1 Slot -->
+        <div class="mentor-card">
+          <h3>Dr. John Doe</h3>
+          <p>Expertise: Data Structures, Algorithms</p>
+          <button class="book-btn" onclick="bookSlot(this)">Book Slot</button>
+        </div>
+        <!-- Mentor 2 Slot -->
+        <div class="mentor-card">
+          <h3>Dr. Jane Smith</h3>
+          <p>Expertise: Web Development, Machine Learning</p>
+          <button class="book-btn" onclick="bookSlot(this)">Book Slot</button>
+        </div>
+        <!-- Add more mentors as needed -->
+      </div>
+    </section>
+
+    <!-- Communication Section -->
+    <section class="communication-section">
+      <h2>Chat with Mentor</h2>
+      <div class="chat-box">
+        <p><strong>Mentor:</strong> Hello! How can I help you today?</p>
+        <input type="text" id="chat-input" placeholder="Type your message">
+        <button id="send-btn">Send</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
